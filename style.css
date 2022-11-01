@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+/*.container {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "aside main" "footer footer";
+    grid-template-columns: 34.8rem 95.2rem;
+    /* grid-template-columns: 34.8rem 66%; 
+    gap: 1.9rem 6rem;
+    margin: 4rem 4rem 2rem;
+}*/
+
+body {
+    background: #22212C;
+    position: relative;
+    width: 1440px;
+    height: 1767px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: normal;
+}
+
+#Profile, #Links, #Tecnologias, #Educação, #MyProjects, #Project1, #Project2, #RecentPosts, #Posts {
+    background: #302F3D;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    color: #837E9F;
+}
+
+#Profile, #Links, #Tecnologias, #Educação {
+    display: flex;
+    flex-direction: column;
+}
+
+#MyProjects, #Project1, #Project2, #RecentPosts, #Posts {
+    padding: 3px;
+}
+
+#Profile {
+    margin-bottom: 30px;
+    margin: auto;
+    position: absolute;
+    width: 348px;
+    height: 292px;
+    left: 40px;
+    top: 40px;
+}
+
+img {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 110px;
+    top: 32px;
+    border-radius: 50%;
+    border: #00FF00 solid 2px;
+}
+
+#Profile h3 {
+    margin: auto;
+    position: absolute;
+    width: 196px;
+    height: 26px;
+    margin-left: 76px;
+    margin-top: 190px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    text-align: center;
+}
+
+#Profile p {
+    margin: 10px auto;
+    position: absolute;
+    width: 128px;
+    height: 17px;
+    margin-left: 110px;
+    margin-top: 226px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    /* identical to box height */
+}
+
+#Links {
+    position: absolute;
+    width: 348px;
+    height: 348px;
+    left: 40px;
+    top: 363px;
+}
+
+.Local, .Job, .Github, .Linkedin, .Twitter, .Email {
+    font-size: 13px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Merriweather Sans';
+    font-style: normal;
+    color: #837E9F;
+    margin-left: 40px;
+    margin-bottom: 24px;
+}
+
+.Local {
+    margin-top: 33px;
+    line-height: 16px;
+    font-weight: 400;  
+}
+
+#Tecnologias ul {
+  list-style: none;
+}
+
+#Tecnologias {
+    position: absolute;
+    width: 348px;
+    height: 208px;
+    left: 40px;
+    top: 740px;
+    justify-content: center; 
+    margin-bottom: 16px;
+}
+
+#Tecnologias h3 {
+    position: absolute;
+    width: 121px;
+    height: 26px;
+    left: 20px;
+    top: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #837E9F;
+}
+
+.Tec1, .Tec2, .Tec3, .Tec4 {
+    position: absolute;
+    margin: auto;
+    background-color: #CB92B1;
+    height: 24px;
+    width: 86px;
+    border-radius: 30px;    
+    padding: 3px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    gap: 3px;
+    width: 46px;
+    color: #000000;
+}
+
+.Tec1 {
+    width: 86px;
+    left: 49px;
+    top: 76px;
+}
+
+.Tec2 {
+    width: 86px;
+    left: 49px;
+    top: 150px;
+}
+
+.Tec3 {
+    width: 86px;
+    left: 210px;
+    top: 76px;
+}
+
+.Tec4 {
+    width: 86px;
+    left: 210px;
+    top: 150px;
+}
+
+#Educação {
+    position: absolute;
+    width: 348px;
+    height: 230px;
+    left: 40px;
+    top: 978px;
+}
+
+#Educação h3 {
+    position: absolute;
+    width: 141px;
+    height: 26px;
+    left: 20px;
+    top: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.Educa {
+    position: absolute;
+    width: 175px;
+    left: 40px;
+    top: 76px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #837E9F;
+}
+
+#MyProjects {
+    position: absolute;
+    width: 952px;
+    height: 86px;
+    left: 448px;
+    top: 40px;
+}
+
+#MyProjects h4 {
+    position: absolute;
+    width: 121px;
+    height: 26px;
+    left: 30px;
+    top: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */   
+}
+
+#Project1 {
+    position: absolute;
+    width: 461px;
+    height: 186px;
+    left: 448px;
+    top: 157px;
+}
+
+#Project1 h5 {
+    position: absolute;
+    width: 279px;
+    height: 17px;
+    left: 30px;
+    top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #837E9F;
+}
+
+#Project1 p {
+    position: absolute;
+    width: 421px;
+    height: 19px;
+    left: 30px;
+    top: 70px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#Project1 footer {
+    position: absolute;
+    width: 92px;
+    height: 16px;
+    left: 339px;
+    top: 136px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#Project2 {
+    position: absolute;
+    width: 461px;
+    height: 186px;
+    left: 939px;
+    top: 157px;
+}
+
+#Project2 h5 {
+    position: absolute;
+    width: 279px;
+    height: 17px;
+    left: 30px;
+    top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #837E9F;
+}
+
+#Project2 p {
+    position: absolute;
+    width: 421px;
+    height: 19px;
+    left: 30px;
+    top: 70px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#Project2 footer {
+    position: absolute;
+    width: 92px;
+    height: 16px;
+    left: 339px;
+    top: 136px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#RecentPosts {
+    position: absolute;
+    width: 952px;
+    height: 86px;
+    left: 448px;
+    top: 373px;
+}
+
+#RecentPosts h4 {
+    position: absolute;
+    width: 140px;
+    height: 26px;
+    left: 30px;
+    top: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #837E9F;
+}
+
+#Posts {
+    position: absolute;
+    width: 952px;
+    height: 201px;
+    left: 448px;
+    top: 489px;
+}
+
+#Posts img {
+    box-sizing: border-box;
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 30px;
+    top: 31px;
+    margin-bottom: 42px;
+    border-radius: 50%;
+}
+
+#Posts p {
+    position: absolute;
+    width: 612px;
+    height: 129px;
+    left: 198px;
+    top: 80px;
+}
